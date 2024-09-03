@@ -99,10 +99,10 @@ class MainActivity : ComponentActivity() {
                     NfcAdapter.EXTRA_TAG,
                     nfcIntent.getParcelableCompatibility(NfcAdapter.EXTRA_TAG, Tag::class.java)
                 )
+                setPackage(packageName)
             })
         }
     }
-
 }
 
 @OptIn(ExperimentalStdlibApi::class)
